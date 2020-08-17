@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "aws-amplify": "^3.0.23",
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-query": "^2.5.14"
   }
 }
