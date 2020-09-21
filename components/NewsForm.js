@@ -14,7 +14,7 @@ const NewsForm = () => {
     if (title && description) {
       const news = await mutate({ title, description });
 
-      console.log({ news }, 'Object created');
+      console.log('News created', { news });
 
       setTitle('');
       setDescription('');

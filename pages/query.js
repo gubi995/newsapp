@@ -1,9 +1,19 @@
+import NewsCard from '../components/NewsCard';
 import { useNewsListQuery } from '../hooks/useNewsQuery';
+import styles from '../styles/QueryPage.module.css';
 
 const Query = () => {
-  const { data } = useNewsListQuery();
+  const { data: newsList, isLoading } = useNewsListQuery();
 
-  return <div>{JSON.stringify(data, null, '\t')}</div>;
+  if (isLoading) return <h1>Loading...</h1>;
+
+  return (
+    <div className={styles.cards}>
+      {newsList.map((news) => (
+        <NewsCard news={news} key={news.id} />
+      ))}
+    </div>
+  );
 };
 
 export default Query;

@@ -1,4 +1,5 @@
 import Amplify from 'aws-amplify';
+import { ReactQueryDevtools } from 'react-query-devtools';
 
 import awsExports from '../aws-exports';
 import Layout from '../components/Layout';
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Layout>
         <Component {...pageProps} />
+        <ReactQueryDevtools initialIsOpen={false} />
       </Layout>
     </>
   );
