@@ -9,3 +9,8 @@
   border-radius: 50px;
   outline: none;
 }
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

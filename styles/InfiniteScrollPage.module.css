@@ -1,7 +1,10 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 3em;
   row-gap: 2em;
   margin: 1em;
+}
+
+.listItem {
+  height: unset;
 }
