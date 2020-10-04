@@ -11,9 +11,9 @@ const Subscription = () => {
     let mounted = true;
 
     const getNewsList = async () => {
-      const newsList = await fetchNewsList();
+      const { items } = await fetchNewsList();
 
-      mounted && setNewsList(newsList);
+      mounted && setNewsList(items);
     };
 
     getNewsList();
