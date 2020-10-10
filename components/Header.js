@@ -26,10 +26,6 @@ const routes = [
     path: '/infinite-scroll',
     label: 'Infinite scroll',
   },
-  {
-    path: '/pagination',
-    label: 'Pagination',
-  },
 ];
 
 const Header = () => {
